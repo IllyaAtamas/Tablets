@@ -1,7 +1,9 @@
 import java.util.*;
 import java.util.stream.*;
-public class Task5 {
-    public static <T> Stream<T> zip(Stream<T> first, Stream<T> second) {
+
+class Task5 implements StreamZipper {
+    @Override
+    public <T> Stream<T> zip(Stream<T> first, Stream<T> second) {
         Spliterator<T> firstSpliterator = first.spliterator();
         Spliterator<T> secondSpliterator = second.spliterator();
 

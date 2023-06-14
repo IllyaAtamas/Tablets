@@ -1,8 +1,10 @@
 import java.util.*;
 import java.util.stream.*;
 
-public class Task1 {
-    public static String formatNames(List<String> names) {
+
+class Task1 implements NameFormatter {
+    @Override
+    public String formatNames(List<String> names) {
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < names.size(); i++) {
             if (i % 2 == 0) {
