@@ -3,7 +3,7 @@ import java.util.stream.*;
 public class Main {
     public static void main(String[] args) {
         //1
-        List<String> names = Arrays.asList("Ivan", "Peter", "John", "Michael", "David");
+        List<String> names = List.of("Ivan", "Peter", "John", "Michael", "David");
         NameFormatter nameFormatter = new Task1();
         String formattedNames = nameFormatter.formatNames(names);
         System.out.println("Task 1: " + formattedNames);
